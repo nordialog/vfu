@@ -1,22 +1,15 @@
 ---
+layout: default
+title: Forside
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>VFU</title>
-</head>
-<body>
-  <h1>VFU</h1>
 
-  <h2>Nyheter</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        ({{ post.date | date: "%d.%m.%Y" }})
-      </li>
-    {% endfor %}
-  </ul>
-</body>
-</html>
+<h2>Nyheter</h2>
+
+<ul>
+  {% for post in site.posts %}
+	<li>
+	  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+	  ({{ post.date | date: "%d.%m.%Y" }})
+	</li>
+  {% endfor %}
+</ul>
