@@ -52,6 +52,7 @@ a:hover {
 header h1 {
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 .wrapper {
 	width: var(--page-max-width);
