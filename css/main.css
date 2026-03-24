@@ -43,6 +43,10 @@ body {
 	background-color: var(--primary-background-color);
 	padding: 1rem 2rem;
 }
+header h1 {
+	margin: 0;
+	padding: 0;
+}
 .wrapper {
 	width: var(--page-max-width);
 	padding: 2rem;
