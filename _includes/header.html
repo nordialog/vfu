@@ -1,5 +1,7 @@
 <header>
   <h1>Velforeningenes fellesutvalg, Haugesund</h1>
-  <a href="{{ '/' | relative_url }}">Startsiden</a>
+  {% if page.url != "/" %}
+	  <a href="{{ '/' | relative_url }}">Startsiden</a>
+  {% endif %}
   <wa-divider></wa-divider>
 </header>
