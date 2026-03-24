@@ -21,7 +21,7 @@
   --dim-color: var(--wa-color-neutral-80);
   --dimmer-color: var(--wa-color-neutral-90);
   --chart-height-big: 550px;
-  --page-max-width: 85rem;
+  --page-max-width: 70rem;
   --text-opacity: .7;
 }
 :root.wa-dark {
