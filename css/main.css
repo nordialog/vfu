@@ -1,0 +1,45 @@
+:not(:defined) {
+  visibility: hidden;
+}
+
+:root {
+  /* Definere */
+  --primary-color: #374151;
+  --primary-text-color: #3b3b3b;
+  --table-text-color: #3b3b3b;
+  --secondary-text-color: #929292;
+  --primary-background-color: rgb(248, 248, 248);
+  --contrast-background-color: var(--wa-color-neutral-90);
+  --contrast-text-color: var(--wa-color-neutral-20);
+  --card-background-color:  white;
+  --quiet-background-color: #eee;
+  --selected-background-color: var(--wa-color-yellow-90);
+  --selected-text-color: #000;
+  --menu-hover-background: var(--wa-color-blue-60);
+  --menu-hover-text: white;
+  --track-bar-color: #ccc;
+  --dim-color: var(--wa-color-neutral-80);
+  --dimmer-color: var(--wa-color-neutral-90);
+  --chart-height-big: 550px;
+  --page-max-width: 85rem;
+  --text-opacity: .7;
+}
+:root.wa-dark {
+	--primary-text-color: #ccc;
+	--secondary-text-color: #929292;
+	--table-text-color: #939393;
+	--primary-background-color:  var(--wa-color-neutral-0);
+	--contrast-background-color: var(--wa-color-neutral-10);
+	--contrast-text-color: var(--wa-color-neutral-60);
+	--card-background-color:  var(--wa-color-neutral-10);
+	--quiet-background-color: #333;
+	--selected-background-color: var(--wa-color-yellow-30);
+	--selected-text-color: #ccc;
+	--track-bar-color: #444;
+	--dim-color: var(--wa-color-neutral-30);
+	--dimmer-color: var(--wa-color-neutral-20);
+}
+body {
+	background-color: var(--primary-background-color);
+	padding: 1rem 2rem;
+}
