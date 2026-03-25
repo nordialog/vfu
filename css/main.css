@@ -61,4 +61,5 @@ header h1 {
 	padding: 2rem;
 	margin-inline: auto;
 	background-color: var(--card-background-color);
+	border: var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-border-quiet);
 }
