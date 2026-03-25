@@ -42,6 +42,7 @@
 body {
 	background-color: var(--primary-background-color);
 	padding: 1rem 2rem;
+
 }
 a {
 	text-decoration: none;
@@ -55,6 +56,7 @@ header {
 header h1 {
 	margin: 0;
 	padding: 0;
+	color: #939568;
 }
 .wrapper {
 	width: var(--page-max-width);
@@ -62,4 +64,5 @@ header h1 {
 	margin-inline: auto;
 	background-color: var(--card-background-color);
 	border: var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-border-quiet);
+	border-top: 14px solid #939568;
 }
