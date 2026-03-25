@@ -59,7 +59,7 @@ header h1 {
 	font-weight: normal;
 	padding: 0;
 	font-size: 2rem;
-	color: #939568;
+	/*color: #939568;*/
 }
 .wrapper {
 	width: var(--page-max-width);
