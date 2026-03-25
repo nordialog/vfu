@@ -67,7 +67,7 @@ header h1 {
 	margin-inline: auto;
 	background-color: var(--card-background-color);
 	border: var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-border-quiet);
-	border-top: 14px solid #939568;
+	border-top: 6px solid #939568;
 	h2 {
 		font-weight: normal;
 	}
