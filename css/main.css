@@ -50,8 +50,7 @@ a:hover {
 	text-decoration: underline;
 }
 header {
-	width: var(--page-max-width);
-	margin-inline: auto;
+
 }
 header h1 {
 	margin: 0;
@@ -61,4 +60,5 @@ header h1 {
 	width: var(--page-max-width);
 	padding: 2rem;
 	margin-inline: auto;
+	background-color: var(--card-background-color);
 }
