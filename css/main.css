@@ -23,6 +23,7 @@
   --chart-height-big: 550px;
   --page-max-width: 70rem;
   --text-opacity: .7;
+  --vfu-color: #939568;
 }
 :root.wa-dark {
 	--primary-text-color: #ccc;
@@ -59,7 +60,13 @@ header h1 {
 	font-weight: normal;
 	padding: 0;
 	font-size: 2rem;
-	/*color: #939568;*/
+	color: var(--vfu-color);
+	/* color: var(--vfu-color); */
+}
+.logo img {
+	height: 4.4rem;
+	width: auto;
+	margin-bottom: 1rem;
 }
 .wrapper {
 	width: var(--page-max-width);
@@ -67,7 +74,7 @@ header h1 {
 	margin-inline: auto;
 	background-color: var(--card-background-color);
 	border: var(--wa-border-width-s) var(--wa-border-style) var(--wa-color-border-quiet);
-	border-top: 6px solid #939568;
+	border-top: 6px solid var(--vfu-color);
 	h2 {
 		font-weight: normal;
 	}
