@@ -18,4 +18,22 @@
 	  <a href="{{ '/' | relative_url }}">Kontakt</a>
   </div>
   <wa-divider></wa-divider>
+  <div class="mode-selector-wrapper">
+	<wa-dropdown class="mode-selector">
+		<wa-button appearance="plain" class="front-icon" slot="trigger">
+			<wa-icon name="moon"></wa-icon>
+		</wa-button>
+		<wa-dropdown-item value="light">
+			<wa-icon slot="icon" name="sun" variant="regular"></wa-icon>
+			Light
+		</wa-dropdown-item>
+		<wa-dropdown-item value="dark">
+			<wa-icon slot="icon" name="moon"></wa-icon>
+			Dark
+		</wa-dropdown-item>
+		<wa-dropdown-item value="system" class="system-icon">
+			
+		</wa-dropdown-item>
+	</wa-dropdown>
+  </div>
 </header>
