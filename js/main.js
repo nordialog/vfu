@@ -1,7 +1,7 @@
 function startApp(){
   const ms = document.querySelector('.mode-selector');
   ms.addEventListener('wa-select',msChange);
-  localStorage.removeItem('user-color-scheme');
+  //localStorage.removeItem('user-color-scheme');
   if(!localStorage.getItem('user-color-scheme')){
     localStorage.setItem('user-color-scheme','system');
   }
@@ -12,6 +12,17 @@ function msChange(event){
   console.log(event.detail.item.value);
   console.log("===> "+localStorage.getItem('user-color-scheme'));
   applyTheme(event.detail.item.value);
+}
+function fixThemeMenu(theme){
+  const m = document.querySelector('.mode-selector');
+  const mi = m.querySelectorAll('wa-dropdown-item');
+  const sel = m.querySelector(`[value="${theme}"]`)
+  mi.forEach(e=>{
+    e.disabled = false;
+  });
+  //console.log("sel")
+  //console.log(sel)
+ sel.disabled = true;
 }
 function applyTheme(choice) {
   const h = document.querySelector('.switch-mode .option-set');
@@ -51,4 +62,5 @@ function applyTheme(choice) {
   // Lagre det faktiske valget (ikke resultatet av system-sjekken) [cite: 2025-11-22]
   localStorage.setItem('user-color-scheme', choice);
   if (typeof updateSwitchModeActive === 'function') updateSwitchModeActive();
+  fixThemeMenu(choice);
 }
