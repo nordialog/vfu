@@ -30,9 +30,9 @@ function applyTheme(choice) {
   const sicon = document.querySelector('.system-icon');
   const systemcurr = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   if(systemcurr=="light"){
-    sicon.innerHTML = `<wa-icon slot="icon" name="sun" variant="regular"></wa-icon> System`;
+    sicon.innerHTML = `<wa-icon slot="icon" name="sun" variant="regular"></wa-icon> Automatisk`;
   } else {
-    sicon.innerHTML = `<wa-icon slot="icon" name="moon"></wa-icon> System`;
+    sicon.innerHTML = `<wa-icon slot="icon" name="moon"></wa-icon> Automatisk`;
   }
 
  // h.removeEventListener('mouseleave',mouseOutGear);
